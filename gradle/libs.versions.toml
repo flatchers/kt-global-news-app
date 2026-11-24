@@ -1,5 +1,5 @@
 [versions]
-agp = "9.4.1"
+agp = "9.4.0"
 coreKtx = "1.19.1"
 junit = "4.13.2"
 junitVersion = "1.3.0"
@@ -7,21 +7,19 @@ espressoCore = "3.7.0"
 lifecycleRuntimeKtx = "2.11.1"
 activityCompose = "1.13.0"
 
-kotlin = "2.3.21"
+kotlin = "2.4.21"
 room = "2.8.5"
-hilt = "2.59.2"
+hilt = "2.60.1"
 
 retrofit = "3.0.0"
 okhttp = "5.5.1"
 glide = "5.0.10"
 ksp = "2.3.9"
 kotlinSerialization = "1.13.0"
-navigation = "2.8.9"
+navigation = "2.10.2"
 
 composeBom = "2026.11.01"
 ktor = "3.6.1"
-
-firebaseFunctionsKtx = "23.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,7 +40,6 @@ ktor-clientcore = { group = "io.ktor", name = "ktor-client-core", version.ref = 
 ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
 ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor"}
 ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor"}
-firebase-functions-ktx = { group = "com.google.firebase", name = "firebase-functions-ktx", version.ref = "firebaseFunctionsKtx" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
@@ -52,7 +49,7 @@ glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "gl
 
 #Retrofit & OkHttp
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
-retrofit-converter = { group = "com.squareup.retrofit2", name = "converter.gson", version.ref = "retrofit" }
+retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 
 kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinSerialization" }
