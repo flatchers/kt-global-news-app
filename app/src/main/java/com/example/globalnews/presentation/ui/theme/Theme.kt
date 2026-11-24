@@ -1,4 +1,4 @@
-package com.example.globalnews.presentation.theme.ui.theme
+package com.example.globalnews.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -9,13 +9,13 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
-import com.example.globalnews.presentation.theme.ui.Pink40
-import com.example.globalnews.presentation.theme.ui.Pink80
-import com.example.globalnews.presentation.theme.ui.Purple40
-import com.example.globalnews.presentation.theme.ui.Purple80
-import com.example.globalnews.presentation.theme.ui.PurpleGrey40
-import com.example.globalnews.presentation.theme.ui.PurpleGrey80
-import com.example.globalnews.presentation.theme.ui.Typography
+import com.example.globalnews.presentation.ui.Pink40
+import com.example.globalnews.presentation.ui.Pink80
+import com.example.globalnews.presentation.ui.Purple40
+import com.example.globalnews.presentation.ui.Purple80
+import com.example.globalnews.presentation.ui.PurpleGrey40
+import com.example.globalnews.presentation.ui.PurpleGrey80
+import com.example.globalnews.presentation.ui.Typography
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
