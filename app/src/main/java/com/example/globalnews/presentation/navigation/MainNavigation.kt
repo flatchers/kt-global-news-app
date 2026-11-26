@@ -27,25 +27,25 @@ sealed class Screen {
 
 @Composable
 fun MainNav(
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     navHostController: NavHostController
 ) {
     NavHost(
-        modifier = Modifier,
+        modifier = modifier,
         navController = navHostController,
         startDestination = Screen.Login,
     ){
         composable<Screen.Login> {
-            LoginScreen { navigateTo ->
-                navHostController.navigate(navigateTo)
-            }
+            LoginScreen(
+                onNavigateTo = { screen -> navHostController.navigate(screen) }
+            )
         }
-        composable<Screen.Login> {
+        composable<Screen.Register> {
             RegisterScreen { navigateTo ->
                 navHostController.navigate(navigateTo)
             }
         }
-        composable<Screen.Login> {
+        composable<Screen.Main> {
             MainScreen { navigateTo ->
                 navHostController.navigate(navigateTo)
             }
