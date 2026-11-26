@@ -17,7 +17,7 @@ fun MainScreen(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "RegisterScreen"
+            text = "Main Screen"
         )
     }
 }
