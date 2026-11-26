@@ -72,5 +72,6 @@ dependencies {
     implementation(libs.kotlinx.serialization)
     implementation(libs.androidx.navigation.compose)
     testImplementation(kotlin("test"))
+    implementation("androidx.compose.material:material-icons-core")
 
 }
