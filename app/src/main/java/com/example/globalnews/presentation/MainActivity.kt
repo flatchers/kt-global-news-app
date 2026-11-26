@@ -10,7 +10,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.autofill.contentType
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.example.globalnews.presentation.navigation.MainNav
 import com.example.globalnews.presentation.ui.theme.GlobalNewsTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             GlobalNewsTheme {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    MainContent(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -31,17 +33,16 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun MainContent(
+    modifier: Modifier = Modifier,
+) {
+    MainNav(modifier = modifier, navHostController = rememberNavController())
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     GlobalNewsTheme {
-        Greeting("Android")
+        MainContent()
     }
 }
