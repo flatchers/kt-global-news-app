@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Global News</string>
+    <string name="app_name">NewsApp</string>
+
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="login">Login</string>
+    <string name="no_account_register">
+        Still don\'t have an account? Register
+    </string>
+
 </resources>
